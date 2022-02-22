@@ -1,3 +1,5 @@
+# Description WiP
+
 [Kernel for MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Compiling-the-Linux-kernel-for-MiSTer)
 
 export ARCH=arm CROSS_COMPILE=/opt/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
