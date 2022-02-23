@@ -3,7 +3,7 @@ These repository contains my personal tweaks and optimizations for the Linux OS 
 
 These are so far:
 * /etc/init.d/S10udev  
-The command _udevadm settle_ in this udev startup script may raise a timeout for 3 mins for the WiFi adapter after a soft reboot. Seems to be a bug in wpa_supplicant. See [here](https://github.com/NixOS/nixpkgs/issues/107341) and [here](https://github.com/MiSTer-devel/Linux_Image_creator_MiSTer/issues/15) for a more in-depth description.
+The command _udevadm settle_ in this udev startup script may raise a timeout for 3 mins for the WiFi adapter after a soft reboot. Seems to be a bug in wpa_supplicant. See [here](https://github.com/NixOS/nixpkgs/issues/107341) and [here](https://github.com/MiSTer-devel/Linux_Image_creator_MiSTer/issues/14) for a more in-depth description.
 * /etc/init.d/S40network  
 When using a proper DHCP and DNS solution in your network, you may notice that these services are complaining about an "unclean" re-request (and as a result getting declined) for an IP address and/or DNS entry. That's because of a dirty (re-) request from the dhcpcd daemon after a soft reboot without releasing IP address and/or DNS entry before (like after a power outage).  
 See [here](https://github.com/MiSTer-devel/Linux_Image_creator_MiSTer/issues/15) for this issue at MiSTer-devel.
